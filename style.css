@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  margin: auto;
+  background: #1e76d4;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+
+.nav img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav--span {
+  font-size: 14px;
+  font-style: italic;
+}
+
+main > div {
+  display: grid;
+}
+
+.header {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 450px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.header--head {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  color: #2b283a;
+}
+
+.header--content {
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  padding: 30px;
+  color: #2b283a;
+}
+
+.meerkat_animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  writing-mode: vertical-lr;
+  font-size: 0.6rem;
+  text-decoration: none;
+  color: #d8d8d8;
+}
+
+@media only screen and (max-width: 430px) {
+  body {
+    width: 100vw;
+  }
+
+  .nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin: auto;
+    background: #1e76d4;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .header {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .info {
+    min-width: 200px;
+    margin: auto;
+  }
+
+  .meerkat_animation img {
+    height: 75%;
+    width: 75%;
+  }
+}
